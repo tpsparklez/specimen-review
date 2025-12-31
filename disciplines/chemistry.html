@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chemistry — The Specimen Review</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="../garden.html">Garden</a>
+</nav>
+
+<main class="discipline-page">
+
+    <h1>Chemistry</h1>
+
+    <p class="discipline-description">
+        Poems engaging chemical structures, reactions, and molecular thought.
+    </p>
+
+    <!-- Search -->
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by poem title or author"
+        onkeyup="searchPoems()"
+        class="search-box"
+    >
+
+    <!-- Poem list -->
+    <ul id="poemList" class="poem-list">
+
+        <li>
+            <a href="../poems/resonance-structures.html" class="poem-link">
+                <span class="poem-title">Resonance Structures</span>
+                <span class="poem-author">Tessa Pyun</span>
+                <span class="poem-date"><em>December 30th, 2025</em></span>
+             </a>
+        </li>
+
+
+
+    </ul>
+
+</main>
+
+<script>
+function searchPoems() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const poems = document.querySelectorAll("#poemList li");
+
+    poems.forEach(poem => {
+        const text = poem.innerText.toLowerCase();
+        poem.style.display = text.includes(input) ? "" : "none";
+    });
+}
+</script>
+
+</body>
+</html>

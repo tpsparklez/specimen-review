@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agriculture — The Specimen Review</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="../garden.html">Garden</a>
+</nav>
+
+<main class="discipline-page">
+
+    <h1>Agriculture</h1>
+
+    <p class="discipline-description">
+        Poems grown from the soil.
+    </p>
+
+    <!-- Search -->
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by poem title or author"
+        onkeyup="searchPoems()"
+        class="search-box"
+    >
+
+    <!-- Poem list -->
+    <ul id="poemList" class="poem-list">
+
+       
+
+    </ul>
+
+</main>
+
+<script>
+function searchPoems() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const poems = document.querySelectorAll("#poemList li");
+
+    poems.forEach(poem => {
+        const text = poem.innerText.toLowerCase();
+        poem.style.display = text.includes(input) ? "" : "none";
+    });
+}
+</script>
+
+</body>
+</html>

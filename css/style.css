@@ -23,3 +23,37 @@ nav a:hover {
 h1, h2 {
     font-weight: normal;
 }
+.poem-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    
+}
+
+.poem-title {
+    font-style: italic;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.poem-author {
+    display: block;
+    font-size: 0.85em;
+    margin-top: 0.2em;
+}
+
+.poem-date {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 8px 10px;
+    margin: 1.5em 0;
+    font-family: inherit;
+    font-size: 1em;
+    box-sizing: border-box;
+}

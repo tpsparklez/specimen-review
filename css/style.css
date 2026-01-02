@@ -79,6 +79,7 @@ h1, h2 {
     right: 40px;
     width: 300px;
     z-index: 0;
+    transform: translateZ(0);
 }
 
 /* Tree image */

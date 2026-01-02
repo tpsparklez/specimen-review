@@ -58,21 +58,19 @@ h1, h2 {
     box-sizing: border-box;
 }
 
-/* Homepage layout only */
 .homepage-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    position: relative;   /* leaves absolute inside tree-container */
+    position: relative; 
     padding: 40px;
 }
 
 .content-wrapper {
-    max-width: 600px;     /* text column */
+    max-width: 600px;  
 }
 
-/* Tree container fixed to viewport on the right */
 .tree-container {
     position: absolute;
     top: 0px;
@@ -82,14 +80,12 @@ h1, h2 {
     transform: translateZ(0);
 }
 
-/* Tree image */
 .tree {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Leaves container */
 .leaves {
     position: absolute;
     top: 0;
@@ -99,7 +95,6 @@ h1, h2 {
     pointer-events: none;
 }
 
-/* Leaves themselves */
 .leaf {
     position: absolute;
     width: 50px;
@@ -108,12 +103,10 @@ h1, h2 {
     animation: fall linear infinite;
 }
 
-/* Leaf spawn points */
 .leaf-1 { top: 20px; left: 60px; animation-duration: 14s; }
 .leaf-2 { top: 30px; left: 180px; animation-duration: 16s; }
 .leaf-3 { top: 25px; left: 120px; animation-duration: 18s; }
 
-/* Falling animation */
 @keyframes fall {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     100% { transform: translateY(400px) rotate(360deg); opacity: 0; }

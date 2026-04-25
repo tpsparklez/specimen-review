@@ -111,3 +111,8 @@ h1, h2 {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     100% { transform: translateY(400px) rotate(360deg); opacity: 0; }
 }
+
+.poem-text {
+    white-space: pre-wrap;
+    tab-size: 4;
+}
